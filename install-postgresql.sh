@@ -38,7 +38,6 @@ sudo -u postgres psql -c "ALTER USER cronuser WITH SUPERUSER;";
 #sudo -u postgres psql -c "GRANT dbowner TO user1, user2;";
 
 # pg_dump.exe -U username -d databasename -n schemaname > C:\mylocation\mydumpfilename.dmp
-# pg_dump --host=localhost --port=5432 --dbname=dwh --username=postgres -d dwh -n nbfc | gzip > nbfc.pgsql.gz
 # pg_dump --no-acl --no-owner -h 13.233.112.218 -U postgres -p 5432 dwh -Ft | aws s3 cp - s3://vaya-postgres-crondb/backup/dwh.tar
 
 # pg_dump --no-acl --no-owner -h 13.233.112.218 -U postgres -p 5432 test -Ft -f /home/vaya-it/Desktop/postgres-backup/test.tar
