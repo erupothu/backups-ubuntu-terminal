@@ -5,9 +5,9 @@ sudo apt install -y mysql-server
 
 sudo mysql_secure_installation
 
-sudo mysql -uroot -p -e "CREATE USER cronuser@localhost IDENTIFIED BY 'cronpass';";
+sudo mysql -uroot -p -e "CREATE USER harish@localhost IDENTIFIED BY '#@|!$#';";
 
-sudo mysql -uroot -p -e "GRANT ALL PRIVILEGES ON *.* TO 'cronuser'@'localhost';";
+sudo mysql -uroot -p -e "GRANT ALL PRIVILEGES ON *.* TO 'harish'@'localhost';";
 
 #sudo mysql -uroot -p -e "ALTER USER cronuser WITH SUPERUSER;";
 
